@@ -128,7 +128,7 @@ function register($form) {
         error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
         success     : function(data) {
             if (data.result != "success") {
-                appendResult('Неправильный email или Вы уже зарегитрированы. Попробуйте еще раз!', 'error', 'exclamation');
+                appendResult('Неправильный email или Вы уже зарегистрированы. Попробуйте еще раз!', 'error', 'exclamation');
             } else {
                 // It worked, carry on...
                 appendResult('Проверьте email для подтверждения!', 'success', 'check');
